@@ -73,12 +73,17 @@ body {
     align-items: center;
 }
 
+.brand__img-column {
+    position: absolute;
+}
+
 .brand__title {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     /* width: 377px; */
     text-transform: uppercase;
+    padding: 20px;
 }
 
 .brand__sub-title {
@@ -102,6 +107,10 @@ body {
     flex-wrap: wrap;
 }
 
+.promotions__text-women {
+    color: var(--dark-pink-color);
+}
+
 .promotions__item {
     width: 360px;
     min-height: 260px;
@@ -116,10 +125,34 @@ body {
     background-size: cover;
 }
 
-.promotions__item--man,
-.promotions__item--kids,
-.promotions__item--accesories {
+.promotions__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    display: block;
+    text-align: center;
+    color: #F1E4E6;
+}
+
+.promotions__text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    display: block;
+    text-align: center;
+    color: var(--dark-pink-color);
+}
+
+.promotions__item--man {
     background-image: url("../img/promotions-man.jpg");
+    background-size: cover;
+}
+.promotions__item--kids {
+    background-image: url("../img/promotions-kids.jpg");
+    background-size: cover;
+}
+.promotions__item--accesories {
+    background-image: url("../img/promotions-accesories.jpg");
     background-size: cover;
 }
 
