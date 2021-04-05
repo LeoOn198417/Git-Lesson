@@ -81,7 +81,6 @@ body {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
-    /* width: 377px; */
     text-transform: uppercase;
     padding: 20px;
 }
@@ -174,11 +173,114 @@ body {
     width: 360px;
 }
 
+.products__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.products__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    padding: 6px 0 48px 0;
+}
+
 .product__img {
     display: block;
+}
+
+.product__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.product__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding: 13px 0 18px 0;
+}
+
+.product__price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    padding: 0px 0 50px 0;
+}
+
+.browse {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0 95px 0;
+}
+
+.browse_product {
+    padding: 14px 38px 13px 38px;
+    border: 1px solid #FF6A6A;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;   
 }
 
 .product__description {
     background: var(--gray-color);
     padding: 25px 29px 20px 17px;
+}
+
+.offers__container {
+    background-color: var(--black-color);
+    width: 100%;
+    Height: 341px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.offers__link {
+    display: flex;
+    justify-content: center;
+    padding: 103px 0px 0px 0px;
+}
+.offers__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    padding: 28px 0px 16px 0px;
+}
+
+.offers__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    padding: 0px 30px 0px 30px;
 }
