@@ -1,0 +1,54 @@
+.promotions {
+    &__list {
+        margin: 0 0 63px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        color: white;
+        @include font(16px, 19px);
+    }
+
+    &__item {
+        width: 31%;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30px;
+
+        @include tablet {
+            width: 31%;
+            min-height: 168px;
+            margin: 0 0 19px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin: 0 0 32px;
+        }
+    }
+    
+    &__item--woman {
+        background-image: url("../img/promotions-woman.jpg");
+        background-size: cover;
+    }
+    
+    &__item--man,
+    &__item--kids,
+    &__item--accesories {
+        background-image: url("../img/promotions-man.jpg");
+        background-size: cover;
+    }
+    
+    &__item--accesories {
+        width: 100%;
+
+        @include tablet {
+            min-height: 116px;
+        }
+    }
+}

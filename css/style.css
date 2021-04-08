@@ -29,6 +29,12 @@ body {
     clip: rect(0 0 0 0);
 }
 
+@media (max-width: 1600px) {
+  .container {
+    width: 96%;
+  }
+}
+
 .header {
     background-color: var(--black-color);
 }
@@ -54,8 +60,91 @@ body {
     margin: 0 33px 0 0;
 }
 
+.header__button:hover + .header__navigation {
+  display: block;
+}
+
+.header__button:hover .header__button-icon {
+  fill: #F16D7F;
+}
+
+.header__button:active .header__button-icon {
+  fill: #F1E4E6;
+}
+
+.header__navigation {
+  background-color: #FFF;
+  position: absolute;
+  Width: 232px;
+  Height: 764px;
+}
+
+.header__title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 0px 0px 0px 34px;
+}
+
+.header__sub-navigation-link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin: 12px 0px 0px 50px;
+}
+
+.header__sub-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin: 0px 0px 0px 34px;
+}
+
 .header__link {
     margin: 0 33px 0 0;
+}
+
+.header__link:hover .header__button-icon {
+  fill: #F16D7F;
+}
+
+.header__link:active .header__button-icon {
+  fill: #F1E4E6;
+}
+
+.header__link-opacity:hover, .header__link-opacity:focus {
+  opacity: 0.7;
+}
+
+.header__button-icon {
+  fill: #E8E8E8;
+}
+
+@media (max-width: 1600px) {
+  .header {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 16px;
+  }
+  .header__link {
+    display: none;
+  }
+  .header__link-opacity {
+    display: none;
+  }
 }
 
 .brand {
@@ -81,6 +170,7 @@ body {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
+  /* width: 377px; */
     text-transform: uppercase;
     padding: 20px;
 }
@@ -101,6 +191,7 @@ body {
 }
 
 .promotions__list {
+    margin: 0 0 63px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -155,6 +246,7 @@ body {
     background-size: cover;
 }
 
+@media (max-width: 1600px) {
 .promotions__item--accesories {
     width: 100%;
 }
@@ -167,6 +259,13 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .products__list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .products__item {
@@ -283,4 +382,110 @@ body {
     text-align: center;
     color: #FBFBFB;
     padding: 0px 30px 0px 30px;
+}
+/*# sourceMappingURL=style.css.map */
+
+.footer__vestibulum-container {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/footer-vestibulum.jpg");
+}
+
+.footer__woman {
+    display: flex;
+    justify-content: center;
+    padding: 87px 230px 0px 0px;
+}
+
+.footer__woman-text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+    text-align: center;
+    width: 360px;
+    padding: 9px 230px 126px 0px;
+}
+
+.footer__subscription-text {
+    font-family: Lato;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    width: 557px;
+    padding: 150px 0px 0px 0px;
+}
+
+.footer__subscription-container {
+    position: absolute;
+    right: 180px;
+}
+
+.footer__input {
+    background: #E1E1E1;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+    width: 323px;
+    Height: 49px;
+    border-radius: 20px 0 0 20px;
+    z-index: 2;
+}
+
+.footer__input-button {
+    background: #F16D7F;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    width: 100px;
+    Height: 55px;
+    border-radius: 0 20px 20px 0;
+    margin: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__links-container {
+    background-color: var(--black-color);
+    Height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links-right {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding: 30px 235px 0px 110px;
+}
+
+.footer__link-networks {
+    padding: 24px 110px 0px 0px;
+}
+
+.footer__link {
+    display: inline-block;
+    Width: 32px;
+    Height: 32px;
+    text-align: center;
+    border: 1px solid #000; 
+    background: #FFFFFF;
+}
+
+.footer__link-ico {
+    padding: 8px;
 }
