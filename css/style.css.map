@@ -10,7 +10,7 @@
         "../scss/blocks/_header.scss",
         "../scss/blocks/_brand.scss",
         "../scss/blocks/_promotions.scss",
-        "../scss/blocks/_products.scss",
+        "../scss/blocks/_product.scss",
         "../scss/blocks/_footer.scss"
     ],
     "names": [],

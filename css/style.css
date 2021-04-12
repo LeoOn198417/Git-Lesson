@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
@@ -37,6 +37,7 @@ body {
 
 .header {
     background-color: var(--black-color);
+    position: relative;
 }
 
 .header__navigation {
@@ -149,9 +150,8 @@ body {
 
 .brand {
     max-width: 1600px;
-    margin: 0 auto;
     display: flex;
-    margin: 0 0 63px;
+    margin: 0 auto 63px auto;
 }
 
 .brand__title-container {
@@ -170,7 +170,6 @@ body {
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
-  /* width: 377px; */
     text-transform: uppercase;
     padding: 20px;
 }
@@ -184,10 +183,6 @@ body {
 
 .brand__pink-sub-title {
     color: var(--dark-pink-color);
-}
-
-.promotions__list {
-    margin: 0 0 63px;
 }
 
 .promotions__list {
@@ -237,10 +232,12 @@ body {
     background-image: url("../img/promotions-man.jpg");
     background-size: cover;
 }
+
 .promotions__item--kids {
     background-image: url("../img/promotions-kids.jpg");
     background-size: cover;
 }
+
 .promotions__item--accesories {
     background-image: url("../img/promotions-accesories.jpg");
     background-size: cover;
@@ -252,27 +249,27 @@ body {
 }
 
 .product__button {
-    display: none;
+    
 }
 
-.products__list {
+.product__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
-  .products__list {
+  .product__list {
     flex-direction: column;
     align-items: center;
   }
 }
 
-.products__item {
+.product__item {
     width: 360px;
 }
 
-.products__title {
+.product__title {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -282,7 +279,7 @@ body {
     text-align: center;
 }
 
-.products__text {
+.product__text {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -295,25 +292,6 @@ body {
 
 .product__img {
     display: block;
-}
-
-.product__title {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
-    color: #000000;
-}
-
-.product__text {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5D5D5D;
-    padding: 13px 0 18px 0;
 }
 
 .product__price {
@@ -362,6 +340,7 @@ body {
     justify-content: center;
     padding: 103px 0px 0px 0px;
 }
+
 .offers__title {
     font-family: Lato;
     font-style: normal;
@@ -383,7 +362,6 @@ body {
     color: #FBFBFB;
     padding: 0px 30px 0px 30px;
 }
-/*# sourceMappingURL=style.css.map */
 
 .footer__vestibulum-container {
     display: flex;

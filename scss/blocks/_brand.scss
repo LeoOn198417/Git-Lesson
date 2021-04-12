@@ -7,7 +7,7 @@
         min-height: 363px;
     }
 
-    .brand__title-container {
+    &__title-container {
         background: $pink-color;
         flex-grow: 1;
         padding: 0 0 0 92px;
@@ -23,12 +23,12 @@
         }
     }
 
-    .brand__title {
+    &__title {
         font-size: 48px;
         font-weight: 900;
         line-height: 58px;
-        /* width: 377px; */
         text-transform: uppercase;
+        padding: 20px;
 
         @include tablet {
             @include font(44px, 52px, normal)
@@ -39,7 +39,7 @@
         }
     }
 
-    .brand__sub-title {
+    &__sub-title {
         font-size: 32px;
         font-weight: 700;
         line-height: 38px;
@@ -54,11 +54,11 @@
         }
     }
 
-    .brand__pink-sub-title {
+    &__pink-sub-title {
         color: $dark-pink-color;
     }
 
-    .brand__img {
+    &__img {
         width: 50%;
         height: auto;
 
@@ -66,4 +66,9 @@
             display: none;
         }
     }
+
+    &__img-column {
+        position: absolute;
+    }
+    
 }
