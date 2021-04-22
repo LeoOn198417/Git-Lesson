@@ -60,36 +60,6 @@
     &__button-icon {
         fill: $gray-light-color;
     }
-
-    &____title {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 17px;
-        color: #000000;
-        margin: 0px 0px 0px 34px;
-    }
-
-    &__sub-navigation-link {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-        margin: 12px 0px 0px 50px;
-    }
-
-    &sub-title {
-        font-family: Lato;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #F16D7F;
-        margin: 0px 0px 0px 34px;
-    }
 }
 
 @media (max-width: $desktop-width) {
